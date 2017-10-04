@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Farmify.unity
+  isLoaded: 1
+  isActive: 1
