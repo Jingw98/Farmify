@@ -57,11 +57,16 @@ namespace Mapbox.Unity.MeshGeneration.Interfaces
 		/// <param name="tile"></param>
 		public override void Create(VectorTileLayer layer, UnityTile tile)
 		{
+
 			_container = new GameObject(Key + " Container");
 			_container.transform.SetParent(tile.transform, false);
 
-			//testing each feature with filters
-			var fc = layer.FeatureCount();
+            GameObject coin = new GameObject("Coin");
+            coin.transform.position = new Vector3(1, 1, 1);
+            coin.transform.parent = _container.transform;
+
+            //testing each feature with filters
+            var fc = layer.FeatureCount();
 			var filterOut = false;
 			for (int i = 0; i < fc; i++)
 			{
@@ -81,7 +86,9 @@ namespace Mapbox.Unity.MeshGeneration.Interfaces
 
 				if (!filterOut)
 					Build(feature, tile, _container);
-			}
+                
+
+            }
 
 			var mergedStack = _defaultStack as MergedModifierStack;
 			if (mergedStack != null)
@@ -118,7 +125,8 @@ namespace Mapbox.Unity.MeshGeneration.Interfaces
 
 		private void Build(VectorFeatureUnity feature, UnityTile tile, GameObject parent)
 		{
-			if (!IsFeatureValid(feature))
+            
+            if (!IsFeatureValid(feature))
 				return;
 
 			//this will be improved in next version and will probably be replaced by filters
@@ -137,6 +145,7 @@ namespace Mapbox.Unity.MeshGeneration.Interfaces
 			{
 				if (_defaultStack != null)
 				{
+                   
 					_defaultStack.Execute(tile, feature, meshData, parent, _key);
 				}
 			}

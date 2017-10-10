@@ -81,17 +81,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\DirectionResource.cs" />
-    <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\Directions.cs" />
-    <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\Overview.cs" />
-    <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\Response\DirectionsResponse.cs" />
-    <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\Response\Intersection.cs" />
-    <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\Response\Leg.cs" />
-    <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\Response\Maneuver.cs" />
-    <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\Response\Route.cs" />
-    <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\Response\Step.cs" />
-    <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\Response\Waypoint.cs" />
-    <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\RoutingProfile.cs" />
+    <Compile Include="Assets\Auckland\Directions\DirectionResource.cs" />
+    <Compile Include="Assets\Auckland\Directions\Directions.cs" />
+    <Compile Include="Assets\Auckland\Directions\Overview.cs" />
+    <Compile Include="Assets\Auckland\Directions\Response\DirectionsResponse.cs" />
+    <Compile Include="Assets\Auckland\Directions\Response\Intersection.cs" />
+    <Compile Include="Assets\Auckland\Directions\Response\Leg.cs" />
+    <Compile Include="Assets\Auckland\Directions\Response\Maneuver.cs" />
+    <Compile Include="Assets\Auckland\Directions\Response\Route.cs" />
+    <Compile Include="Assets\Auckland\Directions\Response\Step.cs" />
+    <Compile Include="Assets\Auckland\Directions\Response\Waypoint.cs" />
+    <Compile Include="Assets\Auckland\Directions\RoutingProfile.cs" />
+    <Compile Include="Assets\CompleteCameraController.cs" />
     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Geocoding\ForwardGeocodeResource.cs" />
     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Geocoding\Geocoder.cs" />
     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Geocoding\GeocodeResource.cs" />
@@ -267,6 +268,8 @@
     <Compile Include="Assets\Mapbox\Unity\Utilities\StyleSearchAttribute.cs" />
     <Compile Include="Assets\Mapbox\Unity\Utilities\TelemetryConfigurationButton.cs" />
     <Compile Include="Assets\Mapbox\Unity\Utilities\VectorExtensions.cs" />
+    <Compile Include="Assets\PlayerMovement.cs" />
+    <Compile Include="Assets\Timer.cs" />
     <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
     <Compile Include="Assets\UnityChan\Scripts\FaceUpdate.cs" />
     <Compile Include="Assets\UnityChan\Scripts\IdleChanger.cs" />
