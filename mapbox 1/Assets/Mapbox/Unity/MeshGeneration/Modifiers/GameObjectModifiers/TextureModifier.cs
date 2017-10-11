@@ -33,7 +33,8 @@ namespace Mapbox.Unity.MeshGeneration.Modifiers
 				_topMaterials[Random.Range(0, _topMaterials.Length)],
 				_sideMaterials[Random.Range(0, _sideMaterials.Length)]
 				};
-			}
+                _meshRenderer.materials[1].mainTextureScale = new Vector2(0.02f, 0.02f);
+            }
 			else if (_textureTop)
 			{
 				_meshRenderer.materials = new Material[1]
