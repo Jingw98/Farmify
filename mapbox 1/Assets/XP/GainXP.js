@@ -7,7 +7,8 @@ function Start () {
 }
 
 function OnTriggerEnter (Col:Collider)
-{
+    {
+        Debug.Log("test");
 	if(Col.tag == "Player")
 	{
 		Destroy(gameObject);

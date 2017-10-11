@@ -115,10 +115,16 @@ namespace Mapbox.Unity.MeshGeneration.Data
 			_unwrappedTileId = tileId;
 			_canonicalTileId = tileId.Canonical;
 			gameObject.name = _canonicalTileId.ToString();
-			var position = new Vector3((float)(_rect.Center.x - map.CenterMercator.x), 0, (float)(_rect.Center.y - map.CenterMercator.y));
+            var position = new Vector3((float)(_rect.Center.x - map.CenterMercator.x), 0, (float)(_rect.Center.y - map.CenterMercator.y));
 			transform.localPosition = position;
-			gameObject.SetActive(true);
-		}
+            GameObject coin = Instantiate(Resources.Load("Coins/USD", typeof(GameObject)) as GameObject);
+            var coinPosition = new Vector3((float)(_rect.Center.x - map.CenterMercator.x), 25, (float)(_rect.Center.y - map.CenterMercator.y));
+            coin.transform.localPosition = coinPosition;
+            coin.transform.localScale = new Vector3(10, 10, 10);
+            coin.transform.parent = gameObject.transform;
+            //coin.AddComponent<levelUpScript>();
+            gameObject.SetActive(true);
+        }
 
 		internal void Recycle()
 		{

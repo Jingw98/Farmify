@@ -61,10 +61,7 @@ namespace Mapbox.Unity.MeshGeneration.Interfaces
 			_container = new GameObject(Key + " Container");
 			_container.transform.SetParent(tile.transform, false);
 
-            GameObject coin = new GameObject("Coin");
-            coin.transform.position = new Vector3(1, 1, 1);
-            coin.transform.parent = _container.transform;
-
+           
             //testing each feature with filters
             var fc = layer.FeatureCount();
 			var filterOut = false;

@@ -10,7 +10,9 @@ function OnTriggerEnter (Col:Collider)
 {
 	if(Col.tag == "Player")
 	{
-		Destroy(gameObject);
+
+
+	    Destroy(gameObject);
 		itemCollectScript.currentItem +=1;
 	}
 }
