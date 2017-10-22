@@ -15,6 +15,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 c24a21b131bfa67be1162db2cba4b52b UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 a7817eb0c61e239aeb698cf50d163d1a Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.MapVisualizer
 65ce61bce6a9cc1cdde99a2eb764fefc Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.SnapTerrainModifier
+15fcf757437144f16f9a32d69d6164b5 Assembly-CSharp.dll:.MainFunction
 2b3291da89200462b2545a02cbc12439 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Factories.VectorTileFactory
 9d094b02b16a0bb26c090239a64168b8 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.PrefabModifier
 5ce0ad6d158b01bc59d5bd527f6188af Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Interfaces.PoiVisualizer
@@ -115,6 +116,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
+842278aa945d41e5979e407e592e64d6 Assembly-UnityScript.dll:.ChangeView
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Components.TextureSelector
 e1734f63576cd8ea370eede4efae656b Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Factories.MapImageFactory
 0abbdc4938288c690efd9c810a09b02f Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.MergedModifierStack
@@ -187,6 +189,7 @@ d2c3a05474ea70332429208b2401eeff Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration
 ab32795e4d805b58f47e2b98596aa658 Assembly-CSharp.dll:Mapbox.Unity.Map.RangeTileProvider
 33a85b2ae614bca5faddeff171651e7f Assembly-CSharp.dll:Mapbox.Unity.Location.DeviceLocationProvider
 c93728c2de7be1bdc64a28d1233525e7 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.SnapTerrainRaycastModifier
+4ddc8f3834f6ecd3a3a5cc57b86e2a29 Assembly-UnityScript.dll:.GetGPS
 971587ca2df0c4c8c8b238f96f6a6f33 Assembly-CSharp.dll:Mapbox.Unity.Location.TransformLocationProvider
 fd1441f74fdb9cec10ac22c943c596cd Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.LayerModifier
 a1d41d38fc0ffc365dc294688f92cb95 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Filters.TypeFilter
@@ -194,5 +197,10 @@ a1d41d38fc0ffc365dc294688f92cb95 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration
 65ce61bce6a9cc1cdde99a2eb764fefc Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.MeshModifier
 ea257d0ff02f704cf5789cf6f5a5f0a0 Assembly-CSharp.dll:.Timer
 658bf8334790d2ed35310347cc5219d9 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.ModifierStack
-4ddc8f3834f6ecd3a3a5cc57b86e2a29 Assembly-UnityScript.dll:.GetGPS
-842278aa945d41e5979e407e592e64d6 Assembly-UnityScript.dll:.ChangeView
+f1b04b42258b96532fc34ed433d02c62 Assembly-CSharp.dll:.SimpleObjectPool
+17744f6d4f586613a592a072000f53ab Assembly-CSharp.dll:.SampleButton
+98e975af0fe693103159681da266d1a5 Assembly-CSharp.dll:.ShopScrollList
+804bb6ce4056dc8893e35f5fe49cee86 Assembly-CSharp.dll:.SampleItem
+f16e2071b8905df7bb16d9a14bd28a1d Assembly-CSharp.dll:.FarmScrollList
+f1b04b42258b96532fc34ed433d02c62 Assembly-CSharp.dll:.FarmObjectPool
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.changeScene

@@ -51,63 +51,63 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\BboxToGeoCoordinateBoundsConverterTest.cs" />
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\BearingFilterTest.cs" />
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\CanonicalTileIdTest.cs" />
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\CompressionTest.cs" />
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\DirectionResourceTest.cs" />
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\DirectionsTest.cs" />
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\FileSourceTest.cs" />
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\ForwardGeocodeResourceTest.cs" />
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\GeocoderTest.cs" />
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\GeoCoordinateBoundsTest.cs" />
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\GeoCoordinateTest.cs" />
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\LonLatToGeoCoordinateConverterTest.cs" />
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\MapTest.cs" />
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\PolylineToGeoCoordinateListConverterTest.cs" />
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\PolylineUtilsTest.cs" />
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\ReverseGeocodeResourceTest.cs" />
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\TileCoverTest.cs" />
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\TileResourceTest.cs" />
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\TileTest.cs" />
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\Utils.cs" />
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\VectorTileTest.cs" />
-     <Compile Include="Assets\Mapbox\Unity\Editor\AddMonoBehavioursModifierDrawer.cs" />
-     <Compile Include="Assets\Mapbox\Unity\Editor\Build\Mapbox_Android_prebuild_checks.cs" />
-     <Compile Include="Assets\Mapbox\Unity\Editor\Build\Mapbox_iOS_build.cs" />
-     <Compile Include="Assets\Mapbox\Unity\Editor\ClearMbTilesCache.cs" />
-     <Compile Include="Assets\Mapbox\Unity\Editor\FactoryEditor.cs" />
-     <Compile Include="Assets\Mapbox\Unity\Editor\FeatureBehaviourEditor.cs" />
-     <Compile Include="Assets\Mapbox\Unity\Editor\FlatSphereTerrainFactoryEditor.cs" />
-     <Compile Include="Assets\Mapbox\Unity\Editor\FlatTerrainFactoryEditor.cs" />
-     <Compile Include="Assets\Mapbox\Unity\Editor\GeocodeAttributeDrawer.cs" />
-     <Compile Include="Assets\Mapbox\Unity\Editor\GeocodeAttributeSearchWindow.cs" />
-     <Compile Include="Assets\Mapbox\Unity\Editor\LayerModifierEditor.cs" />
-     <Compile Include="Assets\Mapbox\Unity\Editor\LowPolyTerrainFactoryEditor.cs" />
-     <Compile Include="Assets\Mapbox\Unity\Editor\MapboxConfigurationWindow.cs" />
-     <Compile Include="Assets\Mapbox\Unity\Editor\MapImageFactoryEditor.cs" />
-     <Compile Include="Assets\Mapbox\Unity\Editor\MeshFactoryEditor.cs" />
-     <Compile Include="Assets\Mapbox\Unity\Editor\StyleOptimizedVectorTileFactoryEditor.cs" />
-     <Compile Include="Assets\Mapbox\Unity\Editor\StyleSearchAttributeDrawer.cs" />
-     <Compile Include="Assets\Mapbox\Unity\Editor\StyleSearchWindow.cs" />
-     <Compile Include="Assets\Mapbox\Unity\Editor\TerrainFactoryEditor.cs" />
-     <Compile Include="Assets\Mapbox\Unity\Editor\UnitTests\DuplicateAndroidLibraries.cs.cs" />
-     <Compile Include="Assets\Mapbox\Unity\Editor\VectorTileFactoryEditor.cs" />
-     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
-     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
-     <None Include="Assets\Mapbox\Fonts\OpenSansLic.txt" />
-     <None Include="Assets\Mapbox\README.txt" />
-     <None Include="Assets\UnityChan\license.txt" />
-     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
-     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
-     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
-     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
-     <None Include="Assets\Mapbox\Core\Plugins\link.xml" />
-     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
-     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\BboxToGeoCoordinateBoundsConverterTest.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\BearingFilterTest.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\CanonicalTileIdTest.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\CompressionTest.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\DirectionResourceTest.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\DirectionsTest.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\FileSourceTest.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\ForwardGeocodeResourceTest.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\GeocoderTest.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\GeoCoordinateBoundsTest.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\GeoCoordinateTest.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\LonLatToGeoCoordinateConverterTest.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\MapTest.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\PolylineToGeoCoordinateListConverterTest.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\PolylineUtilsTest.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\ReverseGeocodeResourceTest.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\TileCoverTest.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\TileResourceTest.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\TileTest.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\Utils.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Core\mapbox-sdk-cs\Tests\UnitTests\Editor\VectorTileTest.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Unity\Editor\AddMonoBehavioursModifierDrawer.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Unity\Editor\Build\Mapbox_Android_prebuild_checks.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Unity\Editor\Build\Mapbox_iOS_build.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Unity\Editor\ClearMbTilesCache.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Unity\Editor\FactoryEditor.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Unity\Editor\FeatureBehaviourEditor.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Unity\Editor\FlatSphereTerrainFactoryEditor.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Unity\Editor\FlatTerrainFactoryEditor.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Unity\Editor\GeocodeAttributeDrawer.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Unity\Editor\GeocodeAttributeSearchWindow.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Unity\Editor\LayerModifierEditor.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Unity\Editor\LowPolyTerrainFactoryEditor.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Unity\Editor\MapboxConfigurationWindow.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Unity\Editor\MapImageFactoryEditor.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Unity\Editor\MeshFactoryEditor.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Unity\Editor\StyleOptimizedVectorTileFactoryEditor.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Unity\Editor\StyleSearchAttributeDrawer.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Unity\Editor\StyleSearchWindow.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Unity\Editor\TerrainFactoryEditor.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Unity\Editor\UnitTests\DuplicateAndroidLibraries.cs.cs" />
+     <Compile Include="Assets\Resources\Mapbox\Mapbox\Unity\Editor\VectorTileFactoryEditor.cs" />
+     <None Include="Assets\Resources\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
+     <None Include="Assets\Resources\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
+     <None Include="Assets\Resources\Mapbox\Mapbox\Fonts\OpenSansLic.txt" />
+     <None Include="Assets\Resources\Mapbox\Mapbox\README.txt" />
+     <None Include="Assets\Resources\UnityChan\license.txt" />
+     <None Include="Assets\Resources\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
+     <None Include="Assets\Resources\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
+     <None Include="Assets\Resources\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
+     <None Include="Assets\Resources\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
+     <None Include="Assets\Resources\Mapbox\Mapbox\Core\Plugins\link.xml" />
+     <None Include="Assets\Resources\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
+     <None Include="Assets\Resources\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
      <None Include="Assets\Resources\Mapbox\MapboxConfiguration.txt" />
-     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
-     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
+     <None Include="Assets\Resources\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
+     <None Include="Assets\Resources\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -169,7 +169,7 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Mapbox.Json">
- <HintPath>C:/GitHub/Farmify/mapbox 1/Assets/Mapbox/Core/Plugins/ThirdParty/Mapbox.Json/Net35/Mapbox.Json.dll</HintPath>
+ <HintPath>C:/GitHub/Farmify/mapbox 1/Assets/Resources/Mapbox/Mapbox/Core/Plugins/ThirdParty/Mapbox.Json/Net35/Mapbox.Json.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

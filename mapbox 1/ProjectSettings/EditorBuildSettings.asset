@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Farmify.unity
+    guid: 44ddba7d0a1897a43b09b0cdd48d2269
+  - enabled: 1
+    path: Assets/Scenes/Farm.unity
+    guid: dc0706e7bd92a2d43a311cd459f9133b
