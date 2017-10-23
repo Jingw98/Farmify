@@ -4,6 +4,8 @@ var tim;
 var lat;
 var lon;
 var locStyle : GUIStyle;
+var latField : UI.Text ;
+var lonField : UI.Text ;
 
 function Start () {
 	// First, check if user has location service enabled
@@ -36,9 +38,9 @@ function Start () {
 
 function Update () {
 	// Access granted and location value could be retrieved
-	lat = Input.location.lastData.latitude;
-	lon = Input.location.lastData.longitude;
-	tim = Input.location.lastData.timestamp;
+	//lat = Input.location.lastData.latitude;
+	//lon = Input.location.lastData.longitude;
+	//tim = Input.location.lastData.timestamp;
 	
 }
 
