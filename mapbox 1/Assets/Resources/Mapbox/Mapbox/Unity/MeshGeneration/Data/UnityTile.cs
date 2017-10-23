@@ -118,10 +118,11 @@ namespace Mapbox.Unity.MeshGeneration.Data
             var position = new Vector3((float)(_rect.Center.x - map.CenterMercator.x), 0, (float)(_rect.Center.y - map.CenterMercator.y));
 			transform.localPosition = position;
             GameObject coin = Instantiate(Resources.Load("Coins/USD", typeof(GameObject)) as GameObject);
-            var coinPosition = new Vector3((float)(_rect.Center.x - map.CenterMercator.x), 25, (float)(_rect.Center.y - map.CenterMercator.y));
-            coin.transform.localPosition = coinPosition;
+            
             coin.transform.localScale = new Vector3(10, 10, 10);
             coin.transform.parent = gameObject.transform;
+            var coinPosition = new Vector3((float)(_rect.Center.x - map.CenterMercator.x), 90, (float)(_rect.Center.y - map.CenterMercator.y));
+            coin.transform.localPosition = coinPosition;
             //coin.AddComponent<levelUpScript>();
             gameObject.SetActive(true);
         }
