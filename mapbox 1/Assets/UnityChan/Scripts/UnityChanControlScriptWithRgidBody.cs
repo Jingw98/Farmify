@@ -6,6 +6,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using Mapbox.Unity.Utilities;
+using Mapbox.Unity.Map;
 
 // 必要なコンポーネントの列記
 [RequireComponent(typeof (Animator))]
@@ -50,7 +52,7 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
     private int lonPlayer;
     GameObject player;
     Vector3 playerPos = new Vector3(0, 0, 0);
-    Vector3 targetPos = new Vector3(0, 0, 0);
+    //Vector3 targetPos = new Vector3(0, 0, 0);
 
     // メインカメラへの参照
 
@@ -88,12 +90,14 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 		anim.SetFloat("Speed", v);                          // Animator側で設定している"Speed"パラメタにvを渡す
                                                             //anim.SetFloat("Direction", h); 						// Animator側で設定している"Direction"パラメタにhを渡す
                                                             //anim.speed = animSpeed;								// Animatorのモーション再生速度に animSpeedを設定する
-                                                            //currentBaseState = anim.GetCurrentAnimatorStateInfo(0);	// 参照用のステート変数にBase Layer (0)の現在のステートを設定する
-        player.transform.position = playerPos;
-        targetPos = Quaternion.AngleAxis(float.Parse(lonField.text) , -Vector3.up) * Quaternion.AngleAxis(float.Parse(latField.text), -Vector3.right) * new Vector3(0, 0, 1);
-        targetPos = targetPos * 20;
-        Debug.Log(targetPos.x+" "+targetPos.y);
-        player.transform.position = Vector3.MoveTowards(playerPos, targetPos, v);
+                                                                                             //currentBaseState = anim.GetCurrentAnimatorStateInfo(0);	// 参照用のステート変数にBase Layer (0)の現在のステートを設定する
+        playerPos=player.transform.position  ;
+        var map2d=new Mapbox.Utils.Vector2d(-4418232.21820, 19454389.36326);
+        var test=Conversions.MetersToPixels(map2d, 20);
+       // var targetPos = VectorExtensions.AsUnityPosition(-37.85011, 174.761751, map2d, (float)2.616533);
+        //player.transform.position = targetPos;
+        //Debug.Log(targetPos.x+" y"+targetPos.z+" iiiii");
+        Debug.Log(test);
 
 
         rb.useGravity = true;//ジャンプ中に重力を切るので、それ以外は重力の影響を受けるようにする

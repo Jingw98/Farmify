@@ -27,7 +27,7 @@ namespace Mapbox.Unity.Utilities
 		/// </summary>
 		/// <param name="v"> The <see cref="T:Mapbox.Utils.Vector2d"/>. </param>
 		/// <returns> A <see cref="T:UnityEngine.Vector2d"/> of coordinates in meters. </returns>
-		private static Vector2d LatLonToMeters(Vector2d v)
+		public static Vector2d LatLonToMeters(Vector2d v)
 		{
 			return LatLonToMeters(v.x, v.y);
 		}
@@ -39,7 +39,7 @@ namespace Mapbox.Unity.Utilities
 		/// <param name="lat"> The latitude. </param>
 		/// <param name="lon"> The longitude. </param>
 		/// <returns> A <see cref="T:UnityEngine.Vector2d"/> of xy meters. </returns>
-		private static Vector2d LatLonToMeters(double lat, double lon)
+		public static Vector2d LatLonToMeters(double lat, double lon)
 		{
 			var posx = lon * OriginShift / 180;
 			var posy = Math.Log(Math.Tan((90 + lat) * Math.PI / 360)) / (Math.PI / 180);
@@ -64,7 +64,9 @@ namespace Mapbox.Unity.Utilities
 		/// </example>
 		public static Vector2d GeoToWorldPosition(double lat, double lon, Vector2d refPoint, float scale = 1)
 		{
-			var posx = lon * OriginShift / 180;
+            Debug.Log("x: "+refPoint.x);
+            Debug.Log("y: " + refPoint.y);
+            var posx = lon * OriginShift / 180;
 			var posy = Math.Log(Math.Tan((90 + lat) * Math.PI / 360)) / (Math.PI / 180);
 			posy = posy * OriginShift / 180;
 			return new Vector2d((posx - refPoint.x) * scale, (posy - refPoint.y) * scale);
@@ -271,7 +273,7 @@ namespace Mapbox.Unity.Utilities
 			return met;
 		}
 
-		private static Vector2d MetersToPixels(Vector2d m, int zoom)
+		public static Vector2d MetersToPixels(Vector2d m, int zoom)
 		{
 			var res = Resolution(zoom);
 			var pix = new Vector2d((float)((m.x + OriginShift) / res), (float)((-m.y + OriginShift) / res));

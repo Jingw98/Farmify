@@ -76,11 +76,13 @@
 		}
 
 		float _worldRelativeScale;
+         
 		public float WorldRelativeScale
 		{
-			get
-			{
+			get { 
+		
 				return _worldRelativeScale;
+               
 			}
 		}
 
@@ -119,9 +121,12 @@
 
 			var referenceTileRect = Conversions.TileBounds(TileCover.CoordinateToTileId(_mapCenterLatitudeLongitude, _zoom));
 			_mapCenterMercator = referenceTileRect.Center;
-
+            
+            Debug.Log("CenterMercator:" + _mapCenterMercator);
 			_worldRelativeScale = (float)(_unityTileSize / referenceTileRect.Size.x);
-			Root.localScale = Vector3.one * _worldRelativeScale;
+            Debug.Log("scale:" + _worldRelativeScale);
+            Root.localScale = Vector3.one * _worldRelativeScale;
+
 
 			_mapVisualizer.Initialize(this, _fileSouce);
 			_tileProvider.Initialize(this);

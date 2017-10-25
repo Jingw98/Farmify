@@ -39,7 +39,7 @@ namespace Mapbox.Unity.MeshGeneration.Factories
 		}
 
 		void Query()
-		{
+		{ Debug.Log("called");
 			_map.OnInitialized -= Query;
 			var count = _waypoints.Length;
 			var wp = new Vector2d[count];
@@ -54,6 +54,7 @@ namespace Mapbox.Unity.MeshGeneration.Factories
 
 		void HandleDirectionsResponse(DirectionsResponse response)
 		{
+           
 			if (null == response.Routes || response.Routes.Count < 1)
 			{
 				return;
